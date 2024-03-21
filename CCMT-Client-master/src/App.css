@@ -1,0 +1,230 @@
+.content {
+  position: relative;
+  z-index: 1; 
+  padding: 20px;
+}
+.btncal{
+  background-color: #3f51b5; /* Darker blue button */
+  color: #ffffff; /* White text color */
+  border-radius: 7px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 6px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+
+}
+.btncal:hover {
+  background-color: #303f9f;
+}
+
+.btncomplexity{
+  background-color: #01266f;
+  color: white;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/* RecursionCalculator.css */
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+/* Background image */
+/* .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  
+} */
+
+/* Content container styles */
+.content {
+  background: linear-gradient(
+    to left,
+    rgb(32, 39, 59) 0%,
+    rgb(31, 23, 81) 100%
+  );
+  padding: 20px;
+  width: 900px;
+  height: 690px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header styles */
+h1 {
+  color: #333;
+  font-size: 34px;
+  margin-bottom: 20px;
+  font-family: 'Tektur';
+}
+
+h4 {
+  color: #f1f6fa;
+  font-size: 15px;
+  margin: 0;
+  position: absolute;
+  left: 2.5cm;
+  top: 270px; /* Adjust the top value as needed */
+}
+
+/* Code input styles */
+.code-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Calculate button styles */
+.btncomplexity {
+  background-color: #3f51b5; /* Darker blue button */
+  color: #ffffff; /* White text color */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btnclear {
+  background-color: #d81515;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btncomplexity:hover {
+  background-color: #303f9f;
+}
+.btnclear:hover {
+  background-color: #a00606;
+}
+
+/* Error message styles */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Complexity result styles */
+.complexity-result {
+  color: #007bff;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Code syntax highlighting styles */
+.code-highlight {
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+.report {
+  z-index: 1;
+  width: 100vh;
+  min-height: 200px; /* Set a minimum height to prevent it from collapsing completely */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Align items vertically */
+}
+
+.report h2 {
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.report p {
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.report ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.report li {
+  margin-bottom: 5px;
+}
+
+.report p:last-child {
+  font-weight: bold;
+}
+
+.file-input {
+  margin-bottom: 10px;
+  margin-left: 50px;
+
+}
+.CCMTcontainer{
+  margin-left: 100px;
+}
+.btnreport{
+  background-color: #3f51b5; /* Darker blue button */
+  color: #ffffff; /* White text color */
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnreport:hover {
+  background-color: #303f9f;
+}
+
+.wcontainer {
+  background-size: cover; /* Adjusts the background image to cover the entire container */
+  background-position: center; /* Centers the background image */
+  height: 20vh; /* Sets the container height to full viewport height */
+  width: 100%; /* Adjusted to percentage */
+}
+
+
+
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
