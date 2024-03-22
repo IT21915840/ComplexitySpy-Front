@@ -3,7 +3,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import CompoundConditionalCalculator from './Component/CompoundCondtionalCalculator';
 import ComplexityCalculator from './Component/ComplexityCalculator';
-import MultipleInheritanceCalculator from './Component/MultipleInheritanceCalculator';
+import ThreadsCalculator from './Component/ThreadsCalculator';
 import ArrayDeclarationCalculator from './Component/ArrayDeclarationCalculator';
 import TryCatchCalculator from './Component/TryCatchCalculator';
 
@@ -15,7 +15,7 @@ function App() {
       <Switch>
         <Route path='/' element={<ComplexityCalculator/>}/>
         <Route path="/CompoundConditionalCalculator" element={<CompoundConditionalCalculator />} />
-        <Route path="/MultipleInheritanceCalculator" element={<MultipleInheritanceCalculator />} />
+        <Route path="/ThreadsCalculator" element={<ThreadsCalculator />} />
         <Route path="/ArrayDeclarationCalculator" element={<ArrayDeclarationCalculator />} />
         <Route path="/TryCatchCalculator" element={<TryCatchCalculator />} />
       </Switch>

@@ -48,7 +48,7 @@ function ComplexityCalculator() {
 
             <div className='CCMTcontainer'>
                 <button className='btncal' onClick={() => window.location.href = '/TryCatchCalculator'}>Try Catch</button>
-                <button className='btncal' onClick={() => window.location.href = '/MultipleInheritanceCalculator'}>Multiple Inheritance</button>
+                <button className='btncal' onClick={() => window.location.href = '/ThreadsCalculator'}>Threads</button>
                 <button className='btncal' onClick={() => window.location.href = '/ArrayDeclarationCalculator'}>Array Declaration</button>
                 <button className='btncal' onClick={() => window.location.href = '/CompoundConditionalCalculator'}>Compound Conditional Statements</button>
                 <br />

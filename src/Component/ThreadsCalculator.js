@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import img1 from "../img/w2.jpg";
 
-function MultipleInheritanceCalculator() {
+function ThreadsCalculator() {
   const [code, setCode] = useState("");
   const [complexity, setComplexity] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -48,7 +48,7 @@ function MultipleInheritanceCalculator() {
       <img src={img1} alt='complexity' className="background-image" />
       <div className="content">
         <div className="CCMTcontainer">
-        <h1 style={{ color: "white" }}>Multiple Inheritance Calculator</h1>
+        <h1 style={{ color: "white" }}>Threads Calculator</h1>
           <button
             className="btncal"
             onClick={() => (window.location.href = "/")}
@@ -87,4 +87,4 @@ function MultipleInheritanceCalculator() {
   );
 }
 
-export default MultipleInheritanceCalculator;
+export default ThreadsCalculator;
