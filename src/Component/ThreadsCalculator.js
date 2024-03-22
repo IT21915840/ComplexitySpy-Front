@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import img1 from "../img/w2.jpg";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function MultipleInheritanceCalculator() {
   const [code, setCode] = useState("");
@@ -11,7 +9,6 @@ function MultipleInheritanceCalculator() {
   const [error, setError] = useState(null);
 
   const handleCalculate = () => {
-    // const sanitizedCode = code.replace(/\\/g, "\\\\");
     console.log("Code sent to backend:", code);
     setIsLoading(true);
     setError(null);
@@ -46,26 +43,6 @@ function MultipleInheritanceCalculator() {
     setCode(code.replace(commentRegex, ""));
   };
 
-  const handleImport = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-
-    reader.onload = (e) => {
-      const importedCode = e.target.result;
-      setCode(importedCode); // Set the imported code in the state
-      setComplexity(null); // Clear any previously calculated complexity
-      setError(null); // Clear any error message
-    };
-
-    if (file.name.endsWith(".java")) {
-      // If the file has a .java extension, read it as text
-      reader.readAsText(file);
-    } else {
-      // For other file types, read them as text as well
-      reader.readAsText(file);
-    }
-  };
-
   return (
     <div className="container">
       <img src={img1} alt='complexity' className="background-image" />
@@ -81,13 +58,6 @@ function MultipleInheritanceCalculator() {
           <button className="btnclear" onClick={handleClearComments}>
             Clear Comments
           </button>
-          <input
-            type="file"
-            accept=".java, .txt"
-            onChange={handleImport}
-            className="file-input"
-          />
-          {error && <p style={{ color: "red" }}>{error}</p>}
         </div>
         <textarea
           rows="15"
@@ -112,18 +82,6 @@ function MultipleInheritanceCalculator() {
         {complexity !== null && 
           <p style={{ color: " white" }}>Calculated Complexity: {complexity}</p>
         }
-        {code && (
-          <diV style={{ height: "210px", overflowY: "scroll" }}>
-            <SyntaxHighlighter
-              language="java"
-              style={vscDarkPlus}
-              showLineNumbers={true} // Add this line to enable line numbers
-              wrapLines={true}
-            >
-              {code}
-            </SyntaxHighlighter>
-          </diV>
-        )}
       </div>
     </div>
   );

@@ -4,10 +4,6 @@ import image from "../img/image.jpg";
 import logo from "../img/logo.png";
 import img1 from "../img/w2.jpg";
 
-// import ReportComponent from './ReportComponent';
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 function ComplexityCalculator() {
     const [code, setCode] = useState('');
     const [complexity, setComplexity] = useState(null);
@@ -43,14 +39,11 @@ function ComplexityCalculator() {
             <div className='content'>
                 
             <div style={{ position: "relative", display: "flex", alignItems: "center" }}>
-                <img src={image} alt='complexity' className="wcontainer" />
-                <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
+              <img src={image} alt='complexity' className="wcontainer" />
+              <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
                 <img src={logo} alt='logo' style={{ width: "50px", height: "50px", position: "absolute", top: "10px", left: "-55px" }} />
-
-
-
-                    <h1 style={{ color: "white", textAlign: "center", zIndex: "1", marginTop: "10px" }}>ComplexitySpy</h1>
-                </div>
+                  <h1 style={{ color: "white", textAlign: "center", zIndex: "1", marginTop: "10px" }}>ComplexitySpy</h1>
+              </div>
             </div>
 
             <div className='CCMTcontainer'>
@@ -80,18 +73,6 @@ function ComplexityCalculator() {
                 <button className= 'btnreport'onClick={handleCalculate}>Report</button>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 {complexity !== null && <h2 style={ {color:'white'}}>Calculated Complexity: {complexity}</h2>}
-                {code && (
-                    <diV style = {{height: "220px", overflowY : "scroll"  }}>
-                    <SyntaxHighlighter
-                        language="java"
-                        style={vscDarkPlus}
-                        showLineNumbers={true} // Add this line to enable line numbers
-                        wrapLines={true}
-                    >
-                        {code}
-                    </SyntaxHighlighter>
-                    </diV>
-                    )}
             </div>
         </div>
     );
