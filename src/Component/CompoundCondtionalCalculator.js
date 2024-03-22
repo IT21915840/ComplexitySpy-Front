@@ -38,7 +38,7 @@ function CompoundConditionalCalculator() {
     setErrorFor(null);
 
     axios
-      .post("http://localhost:8080/calculate-complexity-for", { codeFor })
+      .post("http://localhost:8080/calculate-complexity-switch", { codeFor })
       .then((response) => {
         setComplexityFor(response.data);
       })
@@ -127,7 +127,7 @@ function CompoundConditionalCalculator() {
               cols="50"
               value={codeFor}
               onChange={(e) => setCodeFor(e.target.value)}
-              placeholder="Enter your for loop code here"
+              placeholder="Enter your switch statement code here"
               style={{ overflow: "scroll" }}
             ></textarea>
             <br></br>
@@ -136,7 +136,7 @@ function CompoundConditionalCalculator() {
               onClick={handleCalculateFor}
               disabled={isLoadingFor}
             >
-              {isLoadingFor ? "Calculating..." : "Calculate Complexity FOR"}
+              {isLoadingFor ? "Calculating..." : "Calculate  Switch Statement Complexity"}
             </button>
             <button className="btnclear" onClick={handleClearFor}>
           Clear
