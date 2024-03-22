@@ -48,7 +48,7 @@ function ThreadsCalculator() {
       <img src={img1} alt='complexity' className="background-image" />
       <div className="content">
         <div className="CCMTcontainer">
-        <h1 style={{ color: "white" }}>Threads Calculator</h1>
+        <h1 style={{ color: "white" }}>Threads Complexity Calculator</h1>
           <button
             className="btncal"
             onClick={() => (window.location.href = "/")}

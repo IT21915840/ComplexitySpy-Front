@@ -80,7 +80,7 @@ function CompoundConditionalCalculator() {
       <div className="content" style={{width:"1000px"}}>
         <div className="CCMTcontainer">
         <h1 style={{ color: "white" }}>
-          Compound Conditional Statements Complexity Calculator
+          Compound Conditional Complexity Calculator
         </h1>
           <button
             className="btncal" style={{marginRight: "100px"}}
