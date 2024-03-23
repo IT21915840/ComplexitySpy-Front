@@ -144,7 +144,7 @@ function CompoundConditionalCalculator() {
             {errorFor && <p style={{ color: "red" }}>{errorFor}</p>}
             {complexityFor !== null && (
               <p style={{ color: " white" }}>
-                Calculated FOR Complexity: {complexityFor}
+                Calculated Switch Case Complexity: {complexityFor}
               </p>
             )}
           </div>
