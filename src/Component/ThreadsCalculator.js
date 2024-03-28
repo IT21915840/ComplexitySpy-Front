@@ -14,7 +14,7 @@ function ThreadsCalculator() {
     setError(null);
 
     axios
-      .post("http://localhost:8080/calculate-multiple-inheritance-complexity", { code })
+      .post("http://localhost:8080/detect-concurrent-threads", { code })
       .then((response) => {
         setComplexity(response.data);
       })
